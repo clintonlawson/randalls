@@ -1,0 +1,266 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	10;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Mobile Layout: 480px and below. */
+
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 87.36%;
+	padding-left: 1.82%;
+	padding-right: 1.82%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#image_figures{
+	display:inline-block; 
+	letter-spacing:normal;
+	word-spacing:normal; 
+	white-space:nowrap;
+	margin-top:20px;
+	margin-bottom:20px;
+	margin-left:50px;
+	margin-right:50px; 
+	height:175px;
+	width:175px;
+	-webkit-appearance:none;
+}
+
+#index_figures{
+	margin:0 auto;
+	text-align:center;
+}
+
+#itemtext{
+	text-align:center;
+	margin:0 auto;
+	font-weight:normal;
+	font-size:20px;
+	margin-top:10px;
+}
+
+#back_button{
+	background-color:#cc0000;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:20px;
+	padding:7px 35px;
+	text-decoration:none;
+	-webkit-box-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 1);
+  	-moz-box-shadow:    0px 1px 5px 0px rgba(50, 50, 50, 1);
+  	box-shadow:         0px 1px 5px 0px rgba(50, 50, 50, 1);
+}
+
+#back_button:hover{
+	background-color:#002e8b;
+	-webkit-transition: 	all 0.50s ease-out;
+  	-moz-transition: 		all 0.50s ease-out;
+  	-ms-transition: 		all 0.50s ease-out;
+  	-o-transition: 		all 0.50s ease-out;
+  	transition: 			all 0.50s ease-out;
+}
+
+#main_logo{
+	display:inline-block;
+	height:60px;
+	text-align:center;
+}
+
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+
+#image_figures{
+	display:inline-block; 
+	letter-spacing:normal;
+	word-spacing:normal; 
+	white-space:nowrap;
+	margin-top:40px;
+	margin-bottom:40px;
+	margin-left:60px;
+	margin-right:60px; 
+	height:150px;
+	width:150px;
+	-webkit-appearance:none;
+}
+
+#index_figures{
+	margin:0 auto;
+	text-align:center;
+}
+
+#itemtext{
+	text-align:center;
+	margin:0 auto;
+	font-weight:normal;
+	font-size:20px;
+	margin-top:10px;
+}
+
+#back_button{
+	background-color:#cc0000;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:20px;
+	padding:7px 35px;
+	text-decoration:none;
+	-webkit-box-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 1);
+  	-moz-box-shadow:    0px 1px 5px 0px rgba(50, 50, 50, 1);
+  	box-shadow:         0px 1px 5px 0px rgba(50, 50, 50, 1);
+}
+
+#back_button:hover{
+	background-color:#002e8b;
+	-webkit-transition: 	all 0.50s ease-out;
+  	-moz-transition: 		all 0.50s ease-out;
+  	-ms-transition: 		all 0.50s ease-out;
+  	-o-transition: 		all 0.50s ease-out;
+  	transition: 			all 0.50s ease-out;
+}
+
+#main_logo{
+	display:inline-block;
+	height:60px;
+	text-align:center;
+}
+
+
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 88.2%;
+	max-width: 1232px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: auto;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#image_figures{
+	display:inline-block; 
+	letter-spacing:normal;
+	word-spacing:normal; 
+	white-space:nowrap;
+	margin-top:60px;
+	margin-bottom:60px;
+	margin-left:60px;
+	margin-right:60px; 
+	height:175px;
+	width:175px;
+	-webkit-appearance:none;
+
+}
+
+#index_figures{
+	margin:0 auto;
+	text-align:center;
+}
+
+#itemtext{
+	text-align:center;
+	margin:0 auto;
+	font-weight:normal;
+	font-size:20px;
+	margin-top:10px;
+}
+
+#images{
+	margin-left: 0px;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .4s ease-in-out;
+	transition: .4s ease-in-out;
+	
+}
+
+#images:hover{
+	margin-left:10px;
+	
+}
+
+#back_button{
+	background-color:#cc0000;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:20px;
+	padding:7px 35px;
+	text-decoration:none;
+	-webkit-box-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 1);
+  	-moz-box-shadow:    0px 1px 5px 0px rgba(50, 50, 50, 1);
+  	box-shadow:         0px 1px 5px 0px rgba(50, 50, 50, 1);
+}
+
+#back_button:hover{
+	background-color:#002e8b;
+	-webkit-transition: 	all 0.50s ease-out;
+  	-moz-transition: 		all 0.50s ease-out;
+  	-ms-transition: 		all 0.50s ease-out;
+  	-o-transition: 		all 0.50s ease-out;
+  	transition: 			all 0.50s ease-out;
+}
+
+#main_logo{
+	display:inline-block;
+	height:75px;
+	text-align:center;
+}
+
+
+}
